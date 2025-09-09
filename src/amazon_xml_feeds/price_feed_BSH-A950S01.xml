@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<AmazonEnvelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="amzn-envelope.xsd">
+  <Header>
+    <DocumentVersion>1.01</DocumentVersion>
+    <MerchantIdentifier>MERCHANT_ID</MerchantIdentifier>
+  </Header>
+  <MessageType>Price</MessageType>
+  <Message>
+    <MessageID>1</MessageID>
+    <OperationType>Update</OperationType>
+    <Price>
+      <SKU>BSH-A950S01</SKU>
+      <StandardPrice currency="USD">19.99</StandardPrice>
+    </Price>
+  </Message>
+</AmazonEnvelope>

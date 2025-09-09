@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<AmazonEnvelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="amzn-envelope.xsd">
+  <Header>
+    <DocumentVersion>1.01</DocumentVersion>
+    <MerchantIdentifier>MERCHANT_ID</MerchantIdentifier>
+  </Header>
+  <MessageType>Product</MessageType>
+  <PurgeAndReplace>false</PurgeAndReplace>
+  <Message>
+    <MessageID>1</MessageID>
+    <OperationType>Update</OperationType>
+    <Product>
+      <SKU>BSH-A950S01</SKU>
+      <ProductTaxCode>A_GEN_NOTAX</ProductTaxCode>
+      <LaunchDate>2025-09-09</LaunchDate>
+      <DescriptiveData>
+        <Title>Bosch Aerotwin A950S Windshield Wipers</Title>
+        <Brand>Bosch</Brand>
+        <Description>Premium frameless windshield wipers with Aerotwin technology for perfect windshield cleaning. Suitable for most European cars.</Description>
+        <Manufacturer>Bosch</Manufacturer>
+        <BulletPoint>Compatible with various vehicle models</BulletPoint>
+        <BulletPoint>Aerotwin</BulletPoint>
+        <BulletPoint>Bosch</BulletPoint>
+        <BulletPoint>European cars</BulletPoint>
+        <BulletPoint>Frameless</BulletPoint>
+      </DescriptiveData>
+      <ProductData>
+        <Automotive>
+          <AutomotiveMisc>
+            <ProductType>Wiper Blade</ProductType>
+          </AutomotiveMisc>
+        </Automotive>
+      </ProductData>
+    </Product>
+  </Message>
+</AmazonEnvelope>
