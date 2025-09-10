@@ -1,0 +1,41 @@
+{
+  "field_mapping": {
+    "shopify_field -> amazon_field": {
+      "title": "product_name",
+      "vendor": "brand + manufacturer",
+      "variants[0].sku": "sku",
+      "variants[0].price": "standard_price",
+      "variants[0].inventory_quantity": "quantity",
+      "variants[0].weight": "item_weight",
+      "body_html": "product_description",
+      "product_type": "item_type",
+      "tags": "search_terms",
+      "handle": "может использоваться в URL"
+    }
+  },
+  "missing_in_shopify": [
+    "bullet_point1-5",
+    "part_number",
+    "vehicle_compatibility",
+    "fitting_position",
+    "blade_length",
+    "blade_type",
+    "connector_type",
+    "country_of_origin",
+    "safety_warning",
+    "target_audience"
+  ],
+  "transformation_required": {
+    "price": "Нужно конвертировать USD -> AUD",
+    "weight": "Конвертировать из граммов в другие единицы если нужно",
+    "dimensions": "Добавить размеры товара",
+    "images": "Обработать изображения под требования Amazon"
+  },
+  "data_enrichment_needed": [
+    "Автомобильная совместимость из каталогов",
+    "Технические характеристики дворников",
+    "Ключевые особенности для bullet points",
+    "SEO оптимизированные описания",
+    "Профессиональные изображения"
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "product_type": "AUTO_ACCESSORY или WIPER_BLADE",
+  "marketplace_id": "A39IBJ37TRP1C6",
+  "description": "Схема полей для товара 'Автомобильные дворники' на Amazon Австралия",
+  "documentation_source": "Amazon Seller Central + SP-API Documentation",
+  "required_fields": {
+    "sku": {
+      "type": "string",
+      "description": "Уникальный артикул продавца",
+      "max_length": 40,
+      "required": true,
+      "example": "BSH-A950S01"
+    },
+    "product_name": {
+      "type": "string",
+      "description": "Название товара",
+      "max_length": 250,
+      "required": true,
+      "example": "Bosch Aerotwin A950S Windshield Wipers"
+    },
+    "brand": {
+      "type": "string",
+      "description": "Бренд товара",
+      "max_length": 50,
+      "required": true,
+      "example": "Bosch"
+    },
+    "manufacturer": {
+      "type": "string",
+      "description": "Производитель",
+      "max_length": 50,
+      "required": true,
+      "example": "Bosch"
+    },
+    "item_type": {
+      "type": "string",
+      "description": "Тип товара",
+      "required": true,
+      "example": "Wiper Blade"
+    },
+    "standard_price": {
+      "type": "number",
+      "description": "Стандартная цена в валюте маркетплейса",
+      "required": true,
+      "currency": "AUD",
+      "example": 29.99
+    },
+    "quantity": {
+      "type": "integer",
+      "description": "Количество на складе",
+      "required": true,
+      "example": 10
+    },
+    "product_description": {
+      "type": "string",
+      "description": "Описание товара",
+      "max_length": 2000,
+      "required": true,
+      "example": "Premium frameless windshield wipers with Aerotwin technology..."
+    },
+    "bullet_point1": {
+      "type": "string",
+      "description": "Первый ключевой пункт",
+      "max_length": 255,
+      "required": true,
+      "example": "Compatible with various vehicle models"
+    }
+  },
+  "optional_but_recommended_fields": {
+    "bullet_point2": {
+      "type": "string",
+      "description": "Второй ключевой пункт",
+      "max_length": 255,
+      "example": "Aerotwin technology for perfect cleaning"
+    },
+    "bullet_point3": {
+      "type": "string",
+      "description": "Третий ключевой пункт",
+      "max_length": 255,
+      "example": "Easy installation, no tools required"
+    },
+    "bullet_point4": {
+      "type": "string",
+      "description": "Четвертый ключевой пункт",
+      "max_length": 255,
+      "example": "Durable rubber construction"
+    },
+    "bullet_point5": {
+      "type": "string",
+      "description": "Пятый ключевой пункт",
+      "max_length": 255,
+      "example": "Suitable for all weather conditions"
+    },
+    "search_terms": {
+      "type": "string",
+      "description": "Ключевые слова для поиска",
+      "max_length": 250,
+      "example": "wiper blades windshield car auto parts bosch aerotwin"
+    },
+    "target_audience": {
+      "type": "string",
+      "description": "Целевая аудитория",
+      "max_length": 250,
+      "example": "Car owners, automotive enthusiasts"
+    }
+  },
+  "automotive_specific_fields": {
+    "part_number": {
+      "type": "string",
+      "description": "Номер запчасти производителя",
+      "max_length": 40,
+      "example": "A950S"
+    },
+    "vehicle_compatibility": {
+      "type": "array",
+      "description": "Совместимые модели автомобилей",
+      "example": [
+        "BMW 3 Series",
+        "Audi A4",
+        "Mercedes C-Class"
+      ]
+    },
+    "fitting_position": {
+      "type": "string",
+      "description": "Позиция установки",
+      "enum": [
+        "Front",
+        "Rear",
+        "Driver Side",
+        "Passenger Side"
+      ],
+      "example": "Front"
+    },
+    "blade_length": {
+      "type": "string",
+      "description": "Длина дворника",
+      "example": "24 inches / 600mm"
+    },
+    "blade_type": {
+      "type": "string",
+      "description": "Тип дворника",
+      "enum": [
+        "Conventional",
+        "Beam",
+        "Hybrid",
+        "Flat"
+      ],
+      "example": "Beam"
+    },
+    "connector_type": {
+      "type": "string",
+      "description": "Тип крепления",
+      "example": "Hook Type"
+    }
+  },
+  "images_and_media": {
+    "main_image_url": {
+      "type": "string",
+      "description": "URL основного изображения",
+      "format": "url",
+      "requirements": [
+        "JPEG/PNG",
+        "min 1000x1000px",
+        "white background"
+      ],
+      "required": true
+    },
+    "additional_image_url1": {
+      "type": "string",
+      "description": "URL дополнительного изображения 1",
+      "format": "url"
+    },
+    "swatch_image_url": {
+      "type": "string",
+      "description": "URL изображения для превью",
+      "format": "url"
+    }
+  },
+  "shipping_and_dimensions": {
+    "item_weight": {
+      "type": "number",
+      "description": "Вес товара в граммах",
+      "unit": "grams",
+      "example": 450
+    },
+    "item_length": {
+      "type": "number",
+      "description": "Длина в мм",
+      "unit": "millimeters",
+      "example": 600
+    },
+    "item_width": {
+      "type": "number",
+      "description": "Ширина в мм",
+      "unit": "millimeters",
+      "example": 50
+    },
+    "item_height": {
+      "type": "number",
+      "description": "Высота в мм",
+      "unit": "millimeters",
+      "example": 20
+    }
+  },
+  "compliance_and_safety": {
+    "country_of_origin": {
+      "type": "string",
+      "description": "Страна происхождения",
+      "example": "Germany"
+    },
+    "safety_warning": {
+      "type": "string",
+      "description": "Предупреждения о безопасности",
+      "max_length": 1000,
+      "example": "Professional installation recommended"
+    }
+  }
+}
